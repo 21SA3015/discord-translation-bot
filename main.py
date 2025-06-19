@@ -30,6 +30,8 @@ async def on_message(message):
         return
     translated = translate(message.content)
     await message.channel.send(f"🇮🇩 Terjemahan:\n> {translated}")
+    
+bot.run(TOKEN)
 
 # ... kode sebelumnya
 
