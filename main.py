@@ -2,6 +2,10 @@ import discord
 import requests
 import os
 from discord.ext import commands
+from dotenv import load_dotenv  # Tambahan
+
+# Load .env (untuk ambil TOKEN saat lokal/deploy)
+load_dotenv()
 
 intents = discord.Intents.default()
 intents.message_content = True
