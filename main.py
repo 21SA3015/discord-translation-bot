@@ -31,4 +31,8 @@ async def on_message(message):
     translated = translate(message.content)
     await message.channel.send(f"🇮🇩 Terjemahan:\n> {translated}")
 
-bot.run(TOKEN)
+# ... kode sebelumnya
+
+print(f"🚀 TOKEN: {TOKEN}")  # Tambahkan ini untuk debug
+
+bot.run(TOKEN)  # Jalankan bot
